@@ -13,9 +13,9 @@ pwd
 ```
 
 📌 Output example:
-
-```
 ![images](./images/ls1.png)
+```
+/Users/abhaypratapsingh/Documents/GitHub/Linux_1
 ```
 
 ---
@@ -29,8 +29,11 @@ ls
 ```
 ![images](./images/ls2.png)
 * `ls -l` → Detailed list (permissions, size, date)
+![images](./images/ls3.png)
 * `ls -a` → Shows hidden files (those starting with `.`)
+![images](./images/ls4.png)
 * `ls -la` → Combined
+![images](./images/ls5.png)
 
 ---
 
@@ -39,16 +42,21 @@ ls
 Moves into a directory.
 
 ```bash
-cd Lab
+cd folder_name
 ```
 
 Examples:
 
 ```bash
 cd Documents        # Go to Documents
+![images](./images/ls6.png)
+
 cd ..               # Go up one level
+![images](./images/ls8.png)
 cd /                # Go to root
+![images](./images/ls9.png)
 cd ~                # Go to home directory
+
 ```
 
 ---
@@ -62,7 +70,7 @@ Creates a new folder.
 ```bash
 mkdir new_folder
 ```
-
+![images](./images/ls10.png)
 ---
 
 ### `touch` – Create File
@@ -72,7 +80,7 @@ Creates an empty file.
 ```bash
 touch file.txt
 ```
-
+![images](./images/ls11.png)
 ---
 
 ### `cp` – Copy Files or Directories
@@ -80,6 +88,7 @@ touch file.txt
 ```bash
 cp source.txt destination.txt
 ```
+![images](./images/ls12.png)
 
 * Copy folder:
 
@@ -94,7 +103,7 @@ cp -r folder1 folder2
 ```bash
 mv oldname.txt newname.txt
 ```
-
+![images](./images/ls14.png)
 ```bash
 mv file.txt ~/Documents/     # Move file
 ```
