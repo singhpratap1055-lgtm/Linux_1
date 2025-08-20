@@ -44,20 +44,18 @@ Moves into a directory.
 ```bash
 cd folder_name
 ```
+![images](./images/ls6.png)
 
 Examples:
 
 ```bash
 cd Documents        # Go to Documents
-![images](./images/ls6.png)
-
 cd ..               # Go up one level
-![images](./images/ls8.png)
 cd /                # Go to root
-![images](./images/ls9.png)
 cd ~                # Go to home directory
 
 ```
+![images](./images/ls6.png)
 
 ---
 
@@ -95,7 +93,7 @@ cp source.txt destination.txt
 ```bash
 cp -r folder1 folder2
 ```
-
+![images](./images/ls13.png)
 ---
 
 ### `mv` – Move or Rename Files
@@ -107,15 +105,19 @@ mv oldname.txt newname.txt
 ```bash
 mv file.txt ~/Documents/     # Move file
 ```
-
+![images](./images/ls15.png)
 ---
 
 ### `rm` – Remove Files
 
 ```bash
 rm file.txt          # Delete file
+
+![images](./images/ls16.png)
+
 rm -r folder_name    # Delete folder (recursively)
 ```
+![images](./images/ls17.png)
 
 ⚠️ **Be careful!** There is no undo.
 
@@ -130,7 +132,7 @@ Displays content in terminal.
 ```bash
 cat file.txt
 ```
-
+![images](./images/ls18.png)
 ---
 
 ### `nano` – Edit Files in Terminal
@@ -140,6 +142,7 @@ A basic terminal-based text editor.
 ```bash
 nano file.txt
 ```
+![images](./images/ls19.png)
 
 * Use arrows to move
 * `CTRL + O` to save
@@ -152,6 +155,7 @@ nano file.txt
 ```bash
 clear
 ```
+![images](./images/ls20.png)
 
 Shortcut: `CTRL + L`
 
@@ -166,6 +170,7 @@ Useful for debugging or scripting.
 ```bash
 echo "Hello, World!"
 ```
+
 
 ---
 
@@ -186,6 +191,7 @@ man ls
 Use `q` to quit the manual.
 
 ---
+![images](./images/ls23.png)
 
 ## ✅ 5. **Searching and Finding**
 
@@ -227,6 +233,7 @@ grep "hello" file.txt
 ```bash
 mkdir test && cd test && touch hello.txt
 ```
+![images](./images/ls24.png)
 
 * **Run only if previous command succeeds**: `&&`
 * **Run regardless of success**: `;`
