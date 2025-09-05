@@ -58,4 +58,4 @@ file2.txt
 ### Output
 Files copied into ⁠ backup/ ⁠ with timestamps:
 
-[images](./images/l3.png)
+![images](./images/l3.png)
