@@ -57,4 +57,5 @@ file2.txt
 
 ### Output
 Files copied into ⁠ backup/ ⁠ with timestamps:
-1[images](./images/l3.png)
+
+[images](./images/l3.png)
