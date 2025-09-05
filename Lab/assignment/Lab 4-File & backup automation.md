@@ -59,3 +59,64 @@ file2.txt
 Files copied into ⁠ backup/ ⁠ with timestamps:
 
 ![images](./images/l3.png)
+### ques1-What is the difference between cp,mv,and rsync?
+":
+
+🔹 cp (Copy)
+Function: Makes a copy of a file or directory.
+
+The original stays in place, and a duplicate is created.
+
+Basic usage:
+
+cp source.txt destination.txt
+Options:
+
+-r → copy directories recursively.
+
+-i → ask before overwrite.
+
+-u → only copy if source is newer.
+
+✅ Good for simple duplication.
+❌ Doesn’t preserve permissions/timestamps by default (unless -p).
+
+🔹 mv (Move/Rename)
+Function: Moves or renames files/directories.
+
+The file is removed from the source location and placed at the destination.
+
+Usage:
+
+mv oldname.txt newname.txt     # Rename
+mv file.txt /home/user/docs/   # Move
+✅ Efficient because it usually just updates the filesystem pointer.
+❌ If moving across filesystems/disks, it works like cp + rm.
+
+🔹 rsync (Remote Sync)
+Function: Advanced tool for synchronizing files/directories between locations (local or remote).
+
+Usage:
+
+rsync -avh source/ backup/
+Features:
+
+Incremental → only copies changed parts, not the whole file.
+
+Remote support → can sync via SSH to another computer.
+
+Preserves permissions, timestamps, symbolic links, etc.
+
+Useful for backups and mirroring.
+
+✅ Best for efficient backups & syncing.
+❌ More complex than cp or mv.
+
+### ques2-How can you schedule scripts to run automatically?
+
+".
+
+🔹 3. Using at (One-time Scheduling)
+Run a script once at a specific time:
+
+echo "/home/user/backup.sh" "
