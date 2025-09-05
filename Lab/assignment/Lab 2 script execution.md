@@ -10,7 +10,7 @@
 
 2.# script to print numbers from 1 to 5 - A comment describing the script.
 
-3.for i in {1..5} - Loop from 1 through 5,assigning each value to variable i.
+3.for i in {1..10} - Loop from 1 through 5,assigning each value to variable i.
 
 4.do - Marks the beginning of commands inside the loop.
 
@@ -46,4 +46,9 @@
 ### Example Run
 
 ![images](./images/a2.png)
+
+ques1-How do you make a script executable?
+
+chmod +x enhanced_numbers.sh
+
 
