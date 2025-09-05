@@ -12,20 +12,20 @@ more.
     1 Go to the VirtualBox Website
 
     2 select your operating system
-![](images/img6.png)
+![images](./images/photo1.png)
 
 ## STEP 2 : INSTALLING VIRTUAL BOX
     
  ### 1 The beginning
-![images](./images/photo1.png)
- ### 2 select installation location
 ![images](./images/photo2.png)
- ### 3 ready to install
+ ### 2 select installation location
 ![images](./images/photo3.png)
- ### 4 installation complete 
+ ### 3 ready to install
 ![images](./images/photo4.png)
- ### 5 opening virtualbox
+ ### 4 installation complete 
 ![images](./images/photo5.png)
+ ### 5 opening virtualbox
+![images](./images/photo6.png)
 ## STEP 3 : INSTALLING LINUX USING VIRTUALBOX
 ### 1 Naming virtual machine
 
@@ -37,9 +37,9 @@ more.
 
    – Select Version: Ubuntu
    
-![images](./images/photo6.png)
-### 2 select the amount of ram
 ![images](./images/photo7.png)
+### 2 select the amount of ram
+![images](./images/photo8.png)
 
 ### 3 Hard Disk setting
   Select hard disk setting:
@@ -50,7 +50,7 @@ more.
 
   -now you are done with hardware settings.
 
-![images](./images/photo8.png) 
+![images](./images/photo9.png) 
 ### 4 Launching your System
 
    Choose the downloaded Linux ISO file:
@@ -58,7 +58,7 @@ more.
    – Click Start to launch your system
 ![images](./images/photo9.png)
   - choose your iso file from your computer
-
+![images](./images/photo10.png)
   
 ### 5 Final installation
 
@@ -66,11 +66,11 @@ more.
 
     – Click Install Linux Mint:
      testf
-
+![images](./images/photo11.png)
 
 ### Make your Account:
 
 – Enter your details as shown below
-
+![images](./images/photo12.png)
 
 # CONGRATULATIONS YOU HAVE SUCCESSFULLY INSTALLED THEUBUNTU LINUX .
