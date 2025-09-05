@@ -75,6 +75,8 @@ more.
 
 # what are two advantages of installing ubuntu in virtual box?
 -Robust snapshot and cloning capabilities
-
+# what are two advantages of dual booting instead of using a vm?
+-better perfomance
+-full hardware compability and access
 
 # CONGRATULATIONS YOU HAVE SUCCESSFULLY INSTALLED THEUBUNTU LINUX .
