@@ -73,4 +73,8 @@ more.
 – Enter your details as shown below
 ![images](./images/photo12.png)
 
+# what are two advantages of installing ubuntu in virtual box?
+-Robust snapshot and cloning capabilities
+
+
 # CONGRATULATIONS YOU HAVE SUCCESSFULLY INSTALLED THEUBUNTU LINUX .
