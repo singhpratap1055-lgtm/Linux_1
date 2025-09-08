@@ -847,10 +847,10 @@ chown [options] new_owner:new_group filename
 ### Examples:
 
 ```bash
-chown vibhu file.txt           # Change owner to user 'vibhu'
-chown vibhu:dev file.txt       # Change owner to 'vibhu' and group to 'dev'
-chown :dev file.txt            # Change only group to 'dev'
-chown -R vibhu:dev /project    # Recursive ownership change
+chown abhay file.txt           # Change owner to user 'abhay'
+chown abhay:pratap file.txt       # Change owner to 'abhay' and group to 'pratap'
+chown :pratap file.txt            # Change only group to 'pratap'
+chown -R abhay:pratap /project    # Recursive ownership change
 ```
 
 ---

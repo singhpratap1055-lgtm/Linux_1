@@ -73,6 +73,13 @@ more.
 – Enter your details as shown below
 ![images](./images/photo12.png)
 
+## commands 
+### uname -a(kernal info)
+![images](./images/g1.png)
+
+### df -h(disk usage)
+![images](./images/g2.png)
+
 # what are two advantages of installing ubuntu in virtual box?
 -Robust snapshot and cloning capabilities
 # what are two advantages of dual booting instead of using a vm?
