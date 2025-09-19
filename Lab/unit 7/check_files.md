@@ -33,7 +33,12 @@ else
    
     [Yy]*) touch "$file"; echo "Created $file"; echo "You can edit it using your favorite editor." ;;
     *) echo "Not creating file." ;;
-    
+
   esac
+
 fi
+
 ![images](./images/k1.png)
+
+
+![images](./images/k2.png)
