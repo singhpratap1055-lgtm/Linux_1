@@ -113,4 +113,4 @@ ps -p 3050 -o %cpu,%mem,etime,comm
 ❌ Not available on macOS.
 👉 Instead, you can use launchd limits (launchctl limit) or third-party tools like Docker (which uses Linux cgroups internally).
 
- 
+ ![images](./images/m8.png)
