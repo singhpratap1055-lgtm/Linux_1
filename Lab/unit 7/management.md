@@ -1,90 +1,111 @@
-Mac Process Management Tutorial Script
- 1.⁠ ⁠List All Processes
-# List all running processes with user and CPU/memory usage
-## command - ps aux
-Narration:
-“This command shows all processes running on your Mac, who owns them, and how much CPU and memory they are using.”
+🌲 1. Show All Processes
+Command:
 
- 2.⁠ ⁠View Process Tree
-# Show hierarchical process tree
-## command - ps -ejH
-Narration:
-“This command shows parent-child relationships between processes. You can see which process started which.”
+ps aux
 
- 3.⁠ ⁠Real-Time Process Monitoring
-# Monitor processes live
-## command -- top
-Narration:
-“Top lets you see processes in real time, including CPU and memory usage. Press q to quit.”
+### output
+![images](./images/m1.png)
 
-Optional GUI alternative:
-Open Activity Monitor from Applications → Utilities for a visual interface.
 
- 4.⁠ ⁠Adjust Process Priority
-# Start a process with low priority
+👉 Same as Linux, works fine.
 
-## command -- nice -n 10 sleep 300 &
+🌳 2. Process Tree
+Command:
 
-# Change priority of running process
+pstree -p
 
-## command -- renice -n -5 -p <PID>
+### output
+![images](./images/m2.png)
 
-Narration:
-“Use nice to start a process with lower priority, and renice to change the priority of a running process. Higher priority processes get more CPU time.”
 
- 5.⁠ ⁠CPU Affinity (Optional / Advanced)
-# Install cpuset via Homebrew
-## command -- brew install cpuset
+👉 Not installed by default. Install via:
 
-# Bind a process to CPU cores
-## command -- sudo cpuset -l 0,1 -p <PID>
-Narration:
-“Mac doesn’t have built-in CPU affinity, but you can use cpuset to restrict a process to certain CPU cores.”
+brew install pstree
 
- 6.⁠ ⁠Check Open Files by a Process
-# List open files for a process
-## command -- lsof -p <PID> | head -5
-Narration:
-“This shows the files, directories, and network connections a process is currently using.”
 
- 7.⁠ ⁠Trace System Calls
-# Trace system calls (similar to strace) Because strace command not working on macOs.
-## command -- sudo dtruss -p <PID>
-Narration:
-“Dtruss helps debug processes by showing system calls they perform.”
+📊 3. Real-Time Monitoring
+Command:
 
- 8.⁠ ⁠Find Process Using a Port
-# Find process using port 8080
+top
 
-## command -- sudo lsof -i :8080
-Narration:
-“This shows which process is using a specific port on your Mac.”
 
- 9.⁠ ⁠Per-Process Statistics
-# Monitor a specific process in real time
-## command -- top -pid <PID>
-Narration:
-“Use top with a PID to watch CPU and memory usage of a specific process.”
+Differences from Linux:
 
-10.⁠ ⁠Notes on cgroups / I/O Scheduling
-Mac doesn’t support Linux cgroups. Resource limits are handled automatically by the system.
+%CPU shows per-thread, so may exceed 100%.
 
-ionice has no Mac equivalent; Mac I/O scheduling is automatic.
+Interactive keys differ (press q to quit, but no M/P sorting by default).
 
-Narration:
-“Some Linux features like cgroups and ionice don’t exist on Mac. The system manages resources automatically.”
+⚡ 4. Adjust Process Priority
+Start with nice value:
 
-Tips for Recording the Video
-Open Terminal in full screen for clarity.
+nice -n 10 sleep 300 &
 
-Use slow typing and explain each command.
+### output
+![images](./images/m3.png)
 
-Use sleep or short pauses between commands to let viewers read outputs.
 
-Highlight important outputs with comments or narration.
+Change priority:
 
-For visual learners, also show Activity Monitor for real-time monitoring.
+renice -n -5 -p 3050
 
-I can also create a ready-to-use narration script for voice-over that matches these commands, so you can directly record it for your video.
 
-Do you want me to make that?
+👉 Same as Linux.
+
+🔧 5. CPU Affinity (Bind to Core)
+macOS does not support taskset.
+Alternative: use cpulimit (via Homebrew) or Xcode’s sched_setaffinity() APIs — but no built-in CLI equivalent.
+
+📂 6. I/O Scheduling Priority
+ionice is Linux-only, macOS has no direct equivalent.
+
+Closest: use renice for CPU-bound I/O, but disk I/O scheduling can’t be tuned via CLI.
+
+📑 7. File Descriptors Used by Process
+Command:
+
+lsof -p 3050 | head -5
+
+
+👉 Works same as Linux.
+
+🐛 8. Trace System Calls
+Command:
+
+dtruss -p 3050
+
+### output
+![images](./images/m6.png)
+
+Example:
+
+sudo dtruss -p 3050
+
+
+👉 dtruss is the macOS equivalent of strace. (Needs SIP disabled for some cases or run as root).
+
+📡 9. Find Process Using a Port
+Command:
+
+lsof -i :8080
+
+
+
+
+👉 fuser is not available by default, use lsof.
+
+📊 10. Per-Process Statistics
+pidstat is Linux-only. On macOS use:
+
+top -pid 3050
+
+
+or
+
+ps -p 3050 -o %cpu,%mem,etime,comm
+
+
+🔐 11. Control Groups (cgroups)
+❌ Not available on macOS.
+👉 Instead, you can use launchd limits (launchctl limit) or third-party tools like Docker (which uses Linux cgroups internally).
+
+ 
