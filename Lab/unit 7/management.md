@@ -59,6 +59,11 @@ ionice is Linux-only, macOS has no direct equivalent.
 
 Closest: use renice for CPU-bound I/O, but disk I/O scheduling can’t be tuned via CLI.
 
+### Alternative command for macOS.
+### command.
+taskpolicy
+![images](./images/m4.png)
+
 ## 📑 7. File Descriptors Used by Process
 Command:
 
@@ -97,6 +102,7 @@ pidstat is Linux-only. On macOS use:
 ### command
 top -pid 3050
 
+![images](./images/m7.png)
 
 or
 
