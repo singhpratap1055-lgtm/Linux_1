@@ -136,7 +136,7 @@ ssh -p 22 -X frienduser@FRIEND_IP
 # once connected, run a simple GUI test:
 xeyes &    # or gedit & or xclock &
 ```
-![alt text](images/img76.png)
+![images](./images/n6.png)
 Success criteria: the GUI app window appears on your laptop and is responsive.
 
 Troubleshooting quick checks:
@@ -158,7 +158,7 @@ On friend’s laptop (as frienduser):
 vncserver :1
 # optionally stop with: vncserver -kill :1
 ```
-![alt text](images/img77.jpeg)
+![images](./images/n5.png)
 (Configure desktop environment in ~/.vnc/xstartup if needed — many distros auto-configure.)
 
 On your laptop: create a local SSH tunnel (keeps VNC server bound to localhost on remote; only SSH port open externally)
@@ -170,7 +170,7 @@ ssh -L 5901:localhost:5901 -p 22 frienduser@FRIEND_IP -N &
 ```
 Then open your VNC viewer and connect to:
 
-![alt text](images/img75.png)
+![images](./images/n7.png)
 
 ```
 localhost:5901
