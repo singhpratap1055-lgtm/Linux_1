@@ -75,13 +75,13 @@ ssh username@<your-public-IP>
 ```
 or better yet, use a dynamic DNS (DDNS) service like No-IP or DuckDNS so you can use a hostname instead of changing IPs.
 
-![alt text](images/img74.png)
+![images](./images/n9.png)
 
-![alt text](images/img73.png)
+![images](./images/n10.png)
 
-![alt text](images/img72.png)
+![images](./images/n11.png)
 
-![alt text](images/img71.png)
+![images](./images/n12.png)
 
 # 🏠 GUI
 
@@ -109,9 +109,9 @@ sudo chown -R frienduser:frienduser /home/frienduser/.ssh
 
 ```
 
-![alt text](images/img78.jpeg)
+![images](./images/n8.png)
 
-![alt text](images/img79.jpeg)
+
 Verify sshd is running:
 ```
 sudo systemctl status ssh --no-pager
