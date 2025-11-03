@@ -22,7 +22,7 @@ Run:
 ```
 hostname -I
 ```
-![alt text](images/img69.png)
+![images](./images/n1.png)
 You’ll get something like 192.168.1.42.
 
 ## ✅ Step 3: Connect from Mac
@@ -36,11 +36,11 @@ Replace username with your Ubuntu username.
 
 Enter your password when prompted — you’re in! ✅
 
-![alt text](images/img68.png)
+![images](./images/n2.png)
 
 # ON MAC
 
-![alt text](images/img70.png)
+![images](./images/n3.png)
 
 # 🌐 Case 2: Mac and Ubuntu on different networks (e.g., home ↔ office or remote server)
 
@@ -63,7 +63,7 @@ If your Ubuntu computer is behind a router:
 
 1. Find your Ubuntu’s local IP:
 hostname -I
-![alt text](images/img69.png)
+![images](./images/n4.png)
 
 2. Log in to your router and port-forward port 22 to that IP.
 
