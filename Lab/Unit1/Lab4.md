@@ -122,7 +122,7 @@ chown vibhu:dev file.txt       # Change owner to 'vibhu' and group to 'dev'
 chown :dev file.txt            # Change only group to 'dev'
 chown -R vibhu:dev /project    # Recursive ownership change
 ```
-RRRRRRR
+RRRRRRRR
 ---
 
 ## 🔹 4. Putting It All Together
